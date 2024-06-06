@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ejercicio01.Datos\Ejercicio01.Datos.csproj" />
+    <ProjectReference Include="..\Ejercicio01.Entidades\Ejercicio01.Entidades.csproj" />
+    <ProjectReference Include="..\Ejercicio01.Ioc\Ejercicio01.Ioc.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MiDLL">
+      <HintPath>..\..\..\..\..\Codigo\POO 2024\MiDLL\MiDLL\bin\Debug\net8.0\MiDLL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="BD.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
